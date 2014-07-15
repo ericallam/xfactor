@@ -89,6 +89,10 @@ $ xfactor raw advancedReplace.tops -p Project.xcodeproj
 
 The main benefit of using `xfactor raw` over plain `tops` is that `tops` doesn't know anything about project structure and files. `xfactor` does and will automatically apply this refactoring project-wide.
 
+#### Debugging
+
+If you want to see what xfactor is doing under-the-hood, include the `--dry-run` option on any command it instead of performing any destructive edits, xfactor will print the `tops` rules used in the refactoring. It will also print information on any moved files without actually moving the files. 
+
 ### Installation
 
 `xfactor` is a ruby gem and should work with Mac OS X out of the box by installing it like so:
